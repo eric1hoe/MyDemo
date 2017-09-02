@@ -22,6 +22,8 @@ public class GreetingController {
     public String greeting(@RequestParam(value="name", required=false, defaultValue="World") String name, Model model,HttpSession session) {
 		personService.insertKid();
         System.out.println("insert into 2 kids");
+        String name1="eee";
+        String.format("Hi,%s:%s.%s", name1,"王力","王张");     
         return "";
     }
 	@RequestMapping("/index")
